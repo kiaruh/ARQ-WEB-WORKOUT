@@ -32,5 +32,4 @@ Principales funciones:
 |GET|/products/:id|N/A|Done
 |POST|/products|{ name, description, time }|Done
 |PUT|/products/:id|{ name, description, time }|Done
-|PATCH|/products/:id|{ name, description, time }|Done
 |DELETE|/products/:id|N/A|Done
