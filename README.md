@@ -14,9 +14,8 @@
 Sistema de gestión de ventas para negocios que trabajan con comisiones en el cuál se podrán cargar vendedores, productos y ventas y luego se calcularán automáticamente las comisiones.
 
 Principales funciones:
-- Crear, eliminar y modificar vendedores
-- Crear, eliminar y modificar productos
-- Crear, eliminar y modificar ventas
+- Crear, eliminar y modificar vendedores usuarios
+- Crear, eliminar y modificar productos entrenamientos
 - Obtener comisiones de un vendedor 
 - Reportes mensuales de comisiones
 
@@ -33,10 +32,10 @@ Principales funciones:
 |DELETE|/users/:id|N/A|Done
 |GET|/sales|N/A|Done
 |GET|/sales/:id|N/A|Done
-|GET|/sales/user/:id?from_date="2020-09-09"&to_date="2020-09-09"|N/A|Done
-|GET|/sales/product/:id?from_date="2020-09-09"&to_date="2020-09-09"|N/A|Done
-|GET|/sales?from_date="2020-09-09"&to_date="2020-09-09"|N/A|Done
-|GET|/sales/user/:id/comissions?from_date="2020-09-09"&to_date="2020-09-09"|N/A|Done
+|GET|/sales/user/:id?from_date="2021-06-06"&to_date="2021-06-06"|N/A|Done
+|GET|/sales/product/:id?from_date="2021-06-06"&to_date="2021-06-06"|N/A|Done
+|GET|/sales?from_date="2021-06-06"&to_date="2021-06-06"|N/A|Done
+|GET|/sales/user/:id/comissions?from_date="2021-06-06"&to_date="2021-06-06"|N/A|Done
 |POST|/sales|{ products: [{ id, price }], userId, date, totalPrice }|Done
 |PUT|/sales/:id|{ products: [{ id, price }], userId, date, totalPrice }|Done
 |PATCH|/sales/:id|{ products: [{ id, price }], userId, date, totalPrice }|Done
