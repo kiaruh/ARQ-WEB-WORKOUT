@@ -1,33 +1,49 @@
-# ARQ-WEB-WORKOUT
+## Trabajo Práctico Arquitectura Web 2021
 
-##Arq web up
+---
 
-###Qiyin Li
+<br>
 
-###web app para tracking workout
-
-###Stack de Tegnologias
-MongoDBB  mongodb+srv://kiaruh:<password>@cluster0.bg9w3.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
-Express
-React
-Node.js
-Mongoose
-
-###backend/routes
-users.js
-exercises.js
+#### ESTUDIANTE
+- Qiyin Li
 
 
-####USUARIOS
-5000/users/
-get:/ o /:id
-post: /add
-delete: /:id
-post: /add
+<br>
 
-####ejercicios
-5000/excercise/
-get: / o /:id
-post: /add
-delete: /:id
-post: /update/:id
+#### Descripción del negocio
+Sistema de gestión de ventas para negocios que trabajan con comisiones en el cuál se podrán cargar vendedores, productos y ventas y luego se calcularán automáticamente las comisiones.
+
+Principales funciones:
+- Crear, eliminar y modificar vendedores
+- Crear, eliminar y modificar productos
+- Crear, eliminar y modificar ventas
+- Obtener comisiones de un vendedor 
+- Reportes mensuales de comisiones
+
+<br>
+
+#### Endpoints
+|Método|Endpoint|Body|Status|
+|---|---|---|---|
+|GET|/users|N/A|Done
+|GET|/users/:id|N/A|Done
+|POST|/users|{ email, firstName, lastName, document, role }|Done
+|PUT|/users/:id|{ email, firstName, lastName, document, role }|Done
+|PATCH|/users/:id|{ email, firstName, lastName, document, role }|Done
+|DELETE|/users/:id|N/A|Done
+|GET|/sales|N/A|Done
+|GET|/sales/:id|N/A|Done
+|GET|/sales/user/:id?from_date="2020-09-09"&to_date="2020-09-09"|N/A|Done
+|GET|/sales/product/:id?from_date="2020-09-09"&to_date="2020-09-09"|N/A|Done
+|GET|/sales?from_date="2020-09-09"&to_date="2020-09-09"|N/A|Done
+|GET|/sales/user/:id/comissions?from_date="2020-09-09"&to_date="2020-09-09"|N/A|Done
+|POST|/sales|{ products: [{ id, price }], userId, date, totalPrice }|Done
+|PUT|/sales/:id|{ products: [{ id, price }], userId, date, totalPrice }|Done
+|PATCH|/sales/:id|{ products: [{ id, price }], userId, date, totalPrice }|Done
+|DELETE|/sales/:id|N/A|Done
+|GET|/products|N/A|Done
+|GET|/products/:id|N/A|Done
+|POST|/products|{ name, description, price }|Done
+|PUT|/products/:id|{ name, description, price }|Done
+|PATCH|/products/:id|{ name, description, price }|Done
+|DELETE|/products/:id|N/A|Done
