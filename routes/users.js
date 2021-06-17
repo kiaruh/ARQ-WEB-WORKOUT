@@ -57,26 +57,6 @@ router.put("/:id", (req, res) => {
   }
 });
 
-router.patch("/:id", (req, res) => {
-  if (!req.body || !validatePatchParams(req.body, usersService.fields)) {
-    res.status(400).send("Params not defined");
-    return;
-  }
-  const user = {
-    id: req.params.id,
-    email: req.body.email,
-    firstname: req.body.firstname,
-    lastname: req.body.lastname,
-    document: req.body.document,
-  };
-  try {
-    const patchedUser = usersService.patch(user);
-    res.send(patchedUser);
-  } catch(e) {
-    res.status(400).send(e.message);
-  }
-});
-
 router.delete("/:id", (req, res) => {
   if (!req.params.id) {
     res.status(400).send("Params not defined");

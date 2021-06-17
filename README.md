@@ -11,13 +11,12 @@
 <br>
 
 #### Descripción del negocio
-Sistema de gestión de ventas para negocios que trabajan con comisiones en el cuál se podrán cargar vendedores, productos y ventas y luego se calcularán automáticamente las comisiones.
+Un app de entrenamiento
 
 Principales funciones:
 - Crear, eliminar y modificar vendedores usuarios
 - Crear, eliminar y modificar productos entrenamientos
-- Obtener comisiones de un vendedor 
-- Reportes mensuales de comisiones
+
 
 <br>
 

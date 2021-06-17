@@ -55,25 +55,6 @@ router.put("/:id", (req, res) => {
   }
 });
 
-router.patch("/:id", (req, res) => {
-  if (!req.body || !validatePatchParams(req.body, productsService.fields)) {
-    res.status(400).send("Params not defined");
-    return;
-  }
-  const product = {
-    id: req.params.id,
-    name: req.body.name,
-    description: req.body.description,
-    time: req.body.time
-  };
-  try {
-    const patched = productsService.patch(product);
-    res.send(patched);
-  } catch (e) {
-    res.status(400).send(e.message);
-  }
-});
-
 router.delete("/:id", (req, res) => {
   if (!req.params.id) {
     res.status(400).send("Params not defined");
