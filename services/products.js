@@ -3,7 +3,7 @@ const fs = require("fs");
 const products = require("../mocks/products.json");
 
 class ProductsService {
-  fields = ["name", "description", "price"];
+  fields = ["name", "description", "time"];
 
   getAll = () => {
     return products;

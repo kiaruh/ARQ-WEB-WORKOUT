@@ -28,7 +28,6 @@ router.post("", (req, res) => {
     firstname: req.body.firstname,
     lastname: req.body.lastname,
     document: req.body.document,
-    role: req.body.role,
   };
   try {
     const createdUser = usersService.create(user);
@@ -49,7 +48,6 @@ router.put("/:id", (req, res) => {
     firstname: req.body.firstname,
     lastname: req.body.lastname,
     document: req.body.document,
-    role: req.body.role,
   };
   try {
     const updatedUser = usersService.update(user);
@@ -70,7 +68,6 @@ router.patch("/:id", (req, res) => {
     firstname: req.body.firstname,
     lastname: req.body.lastname,
     document: req.body.document,
-    role: req.body.role,
   };
   try {
     const patchedUser = usersService.patch(user);

@@ -26,23 +26,12 @@ Principales funciones:
 |---|---|---|---|
 |GET|/users|N/A|Done
 |GET|/users/:id|N/A|Done
-|POST|/users|{ email, firstName, lastName, document, role }|Done
-|PUT|/users/:id|{ email, firstName, lastName, document, role }|Done
-|PATCH|/users/:id|{ email, firstName, lastName, document, role }|Done
+|POST|/users|{ email, firstName, lastName, document}|Done
+|PUT|/users/:id|{ email, firstName, lastName, document}|Done
 |DELETE|/users/:id|N/A|Done
-|GET|/sales|N/A|Done
-|GET|/sales/:id|N/A|Done
-|GET|/sales/user/:id?from_date="2021-06-06"&to_date="2021-06-06"|N/A|Done
-|GET|/sales/product/:id?from_date="2021-06-06"&to_date="2021-06-06"|N/A|Done
-|GET|/sales?from_date="2021-06-06"&to_date="2021-06-06"|N/A|Done
-|GET|/sales/user/:id/comissions?from_date="2021-06-06"&to_date="2021-06-06"|N/A|Done
-|POST|/sales|{ products: [{ id, price }], userId, date, totalPrice }|Done
-|PUT|/sales/:id|{ products: [{ id, price }], userId, date, totalPrice }|Done
-|PATCH|/sales/:id|{ products: [{ id, price }], userId, date, totalPrice }|Done
-|DELETE|/sales/:id|N/A|Done
 |GET|/products|N/A|Done
 |GET|/products/:id|N/A|Done
-|POST|/products|{ name, description, price }|Done
-|PUT|/products/:id|{ name, description, price }|Done
-|PATCH|/products/:id|{ name, description, price }|Done
+|POST|/products|{ name, description, time }|Done
+|PUT|/products/:id|{ name, description, time }|Done
+|PATCH|/products/:id|{ name, description, time }|Done
 |DELETE|/products/:id|N/A|Done

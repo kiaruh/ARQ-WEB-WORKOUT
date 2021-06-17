@@ -26,7 +26,7 @@ router.post("", (req, res) => {
   const product = {
     name: req.body.name,
     description: req.body.description,
-    price: req.body.price
+    time: req.body.time
   };
   try {
     const created = productsService.create(product);
@@ -45,7 +45,7 @@ router.put("/:id", (req, res) => {
     id: req.params.id,
     name: req.body.name,
     description: req.body.description,
-    price: req.body.price
+    time: req.body.time
   };
   try {
     const updated = productsService.update(product);
@@ -64,7 +64,7 @@ router.patch("/:id", (req, res) => {
     id: req.params.id,
     name: req.body.name,
     description: req.body.description,
-    price: req.body.price
+    time: req.body.time
   };
   try {
     const patched = productsService.patch(product);
