@@ -14,8 +14,8 @@
 Un app de entrenamiento
 
 Principales funciones:
-- Crear, eliminar y modificar vendedores usuarios
-- Crear, eliminar y modificar productos entrenamientos
+- Crear, eliminar y modificar  usuarios
+- Crear, eliminar y modificar productos:entrenamientos
 
 
 <br>
